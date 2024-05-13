@@ -639,4 +639,42 @@ TrollTab:AddButton({
 	Name = "Chat bypass",
 	Callback = function()
       		print("CHEAT ACTİVE")
-      game.StarterGui:SetCore("SendNotification", {Tit
+      game.StarterGui:SetCore("SendNotification", {Title="4TH DİMENSİON"; Text="in your main accounts do not use It is recommended to log in from a side account"; Duration=5;})
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Synergy-Networks/products/main/BetterBypasser/loader.lua",true))()
+  	end
+})
+
+local GameTab = Window:MakeTab({
+	Name = "Games",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+GameTab:AddButton({
+	Name = "Survive the killer",
+	Callback = function()
+      		print("CHEAT ACTİVE")
+      game.StarterGui:SetCore("SendNotification", {Title="4TH DİMENSİON"; Text="There is a risk of ban Try not to be reported to the admins, do not sabotage the game too much"; Duration=5;})
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Milan08Studio/ChairWare/main/main.lua"))()
+  	end
+})
+
+TrollTab:AddButton({
+	Name = "admin scripts",
+	Callback = function()
+      		print("CHEAT ACTİVE")
+      game.StarterGui:SetCore("SendNotification", {Title="4TH DİMENSİON"; Text="Cheat active!"; Duration=5;})
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/FE%20Trolling%20GUI.luau"))()
+  	end
+})
+
+TrollTab:AddButton({
+	Name = "Chat control",
+	Callback = function()
+      		print("CHEAT ACTİVE")
+      game.StarterGui:SetCore("SendNotification", {Title="4TH DİMENSİON"; Text="/e chat (player name) use it this way"; Duration=5;})
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/scripts/main/FE%20chat%20for%20someone.Lua"))();
+  	end
+})
+
+OrionLib:Init()
