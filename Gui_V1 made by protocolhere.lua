@@ -678,7 +678,7 @@ TrollTab:AddButton({
 })
 
 GameTab:AddButton({
-	Name = "Blox fruit",
+	Name = "Blox fruits",
 	Callback = function()
       		print("CHEAT ACTİVE")
 		loadstring(game:HttpGet"https://raw.githubusercontent.com/Basicallyy/Basicallyy/main/MinGamingV4.lua")()
