@@ -1,3 +1,10 @@
+local function sendMessage(message)
+    game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents")
+        :WaitForChild("SayMessageRequest"):FireServer(message, "All")
+end
+
+sendMessage("Script made by PROTOCOLHERE")
+
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "4TH DİMENSİON", HidePremium = false, IntroText = "4TH DİMENSİON" , SaveConfig = true, ConfigFolder = "OrionTest"})
 
