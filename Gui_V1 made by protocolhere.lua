@@ -692,4 +692,17 @@ GameTab:AddButton({
   	end    
 })
 
+PlayerTab:AddSlider({
+	Name = "WalkSpeed",
+	Min = 16,
+	Max = 300,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "WS",
+	Callback = function(Value)
+		LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end    
+})
+
 OrionLib:Init()
