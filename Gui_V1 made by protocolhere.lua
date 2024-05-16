@@ -701,8 +701,12 @@ PlayerTab:AddSlider({
 	Increment = 1,
 	ValueName = "WS",
 	Callback = function(Value)
-		LocalPlayer.Character.Humanoid.WalkSpeed = Value
-	end    
-})
+		      -- LocalScript
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+LocalPlayer.Character.Humanoid.WalkSpeed = Value
+    end
+  })
 
 OrionLib:Init()
